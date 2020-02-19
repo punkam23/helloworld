@@ -1,11 +1,11 @@
 steps:
 
 # Install node packages
-- name: 'http://nodejs.org/download/release/latest-v12.x/node-v12.16.1.tar.gz'
+- name: 'gcr.io/cloud-builders/npm'
   args: [ 'install' ]
 
 # Build productive files
-- name: 'https://nodejs.org/download/release/latest-v12.x/node-v12.16.1.tar.gz'
+- name: 'gcr.io/cloud-builders/npm'
   args: [ 'run', 'build', '--prod' ]
 
 # Deploy to google cloud app egnine
