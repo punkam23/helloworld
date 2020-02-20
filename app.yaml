@@ -5,10 +5,10 @@ threadsafe: true
 handlers:
 
 - url: /
-  static_files: dist/helloworld/index.html
-  upload: dist/helloworld/index.html
+  static_files: dist/newproject/index.html
+  upload: dist/newproject/index.html
 - url: /
-  static_dir: dist/helloworld
+  static_dir: dist/newproject
 
 skip_files:
 - e2e/
